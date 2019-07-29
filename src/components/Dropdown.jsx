@@ -10,7 +10,12 @@ export default function Dropdown() {
     
     return (
         <div className='container'>
-            <button onClick={handleClick} className='btn'>Accouns settings <i className='material-icons'>public</i></button>
+            <button onClick={handleClick} className='btn'>
+                Accouns settings 
+                <i className='material-icons'>
+                    public
+                </i>
+            </button>
             <div className={isShown ? 'dropdown-wrapper open' : 'dropdown-wrapper'}>
                 <DropdownList/>
             </div>
